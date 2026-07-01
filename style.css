@@ -84,6 +84,10 @@ nav {
   color: var(--text);
 }
 
+.nav-logo:hover {
+  color: var(--text);
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -167,109 +171,76 @@ nav {
   flex-shrink: 0;
 }
 
-/* ── About ── */
-
-#about p {
+.hero-about {
   color: var(--text);
   font-size: 1.0625rem;
   line-height: 1.8;
-}
-
-/* ── Career timeline ── */
-
-.timeline {
-  position: relative;
-  padding-left: 1.5rem;
-  border-left: 2px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
-.timeline-item {
-  position: relative;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -1.5rem;
-  top: 0.45rem;
-  transform: translateX(-50%);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--border);
-  border: 2px solid var(--bg);
-  outline: 2px solid var(--border);
-}
-
-.timeline-role {
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: var(--text);
-  line-height: 1.4;
-}
-
-.timeline-company {
-  font-size: 0.875rem;
-  color: var(--muted);
-  margin-top: 0.1rem;
-}
-
-.timeline-meta {
-  font-size: 0.8125rem;
-  color: var(--muted);
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-desc {
-  font-size: 0.875rem;
-  color: var(--text);
-  opacity: 0.8;
+  margin-top: 2rem;
 }
 
 /* ── Projects ── */
 
-.projects-placeholder {
-  border: 1px dashed var(--border);
-  border-radius: 8px;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.projects-placeholder p {
-  font-size: 0.9375rem;
-  color: var(--muted);
-}
-
-/* ── Education ── */
-
-.education-list {
+.projects-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.edu-item {}
+.project-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1.5rem 1.75rem;
+}
 
-.edu-school {
-  font-size: 0.9375rem;
+.project-image {
+  display: block;
+  width: calc(100% + 3.5rem);
+  margin: -1.5rem -1.75rem 1.25rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--surface);
+}
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-name {
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text);
-  margin-bottom: 0.2rem;
 }
 
-.edu-degree {
-  font-size: 0.875rem;
-  color: var(--muted);
+.project-links {
+  display: flex;
+  gap: 1rem;
 }
 
-.edu-meta {
+.project-links a {
   font-size: 0.8125rem;
   color: var(--muted);
-  margin-top: 0.15rem;
+}
+
+.project-links a:hover {
+  color: var(--accent);
+}
+
+.project-desc {
+  font-size: 0.9375rem;
+  color: var(--text);
+  opacity: 0.85;
+  margin-bottom: 0.6rem;
+}
+
+.project-meta {
+  font-size: 0.8125rem;
+  color: var(--muted);
 }
 
 /* ── Footer ── */

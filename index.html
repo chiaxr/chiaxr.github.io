@@ -12,19 +12,17 @@
   <!-- Nav -->
   <nav>
     <div class="nav-inner">
-      <span class="nav-logo">CXR</span>
+      <a class="nav-logo" href="index.html">CXR</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#career">Career</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero -->
   <section id="hero">
-    <div class="container">
+    <div class="container" id="about">
       <h1 class="hero-name">Chia Xiang Rong</h1>
       <p class="hero-title">Robotics Research Engineer &middot; DSO National Laboratories</p>
       <div class="hero-links">
@@ -34,69 +32,16 @@
           </svg>
           LinkedIn
         </a>
+        <a class="hero-link" href="https://github.com/chiaxr" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23A11.5 11.5 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.696.825.578C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          GitHub
+        </a>
       </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <p class="section-label">About</p>
-      <p>
+      <p class="hero-about">
         I'm a robotics research engineer at DSO National Laboratories in Singapore, where I design and develop robust autonomy for robotic systems. My work focuses on decentralised swarm algorithms — enabling groups of robots to collaborate intelligently without centralised control. I hold a degree in Computer Engineering from the National University of Singapore, graduating with Honours (Highest Distinction).
       </p>
-    </div>
-  </section>
-
-  <!-- Career -->
-  <section id="career">
-    <div class="container">
-      <p class="section-label">Career</p>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-role">Robotics Research Engineer</div>
-          <div class="timeline-company">DSO National Laboratories &middot; Full-time</div>
-          <div class="timeline-meta">Jun 2021 – Present &middot; Singapore</div>
-          <div class="timeline-desc">Design and development of robust autonomy for robotic systems, focusing on decentralised swarm algorithms.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-role">Research Intern</div>
-          <div class="timeline-company">DSO National Laboratories &middot; Internship</div>
-          <div class="timeline-meta">Jun 2020 – Aug 2020</div>
-          <div class="timeline-desc">Implemented a deep inverse sensor model for segmenting noisy radar scans to predict occupancy grid maps.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-role">Teaching Assistant — CG2271 Real-Time Operating Systems</div>
-          <div class="timeline-company">National University of Singapore &middot; Contract</div>
-          <div class="timeline-meta">Aug 2019 – Nov 2019</div>
-          <div class="timeline-desc">Conducted tutorials on RTOS concepts including tasks, scheduling algorithms, and concurrent real-time programming.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-role">Research Intern</div>
-          <div class="timeline-company">DSO National Laboratories &middot; Internship</div>
-          <div class="timeline-meta">May 2019 – Jul 2019</div>
-          <div class="timeline-desc">Identified and implemented a method for robust device-free detection of humans through walls using Wi-Fi signals and machine learning.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-role">Teaching Assistant — CG1112 Engineering Principles &amp; Practice 2</div>
-          <div class="timeline-company">National University of Singapore &middot; Contract</div>
-          <div class="timeline-meta">Jan 2019 – Apr 2019</div>
-          <div class="timeline-desc">Guided students through hardware/software design of a maze-traversing robot using LiDAR SLAM.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-role">Intern</div>
-          <div class="timeline-company">Quantum Inventions &middot; Internship</div>
-          <div class="timeline-meta">Dec 2018 – Jan 2019</div>
-          <div class="timeline-desc">Integrated SQLite Zipvfs into a C++ codebase and optimised data retrieval using R-Trees, improving query times by up to 60% on certain map databases.</div>
-        </div>
-
-      </div>
     </div>
   </section>
 
@@ -104,28 +49,19 @@
   <section id="projects">
     <div class="container">
       <p class="section-label">Projects</p>
-      <div class="projects-placeholder">
-        <p>Projects coming soon.</p>
-      </div>
-    </div>
-  </section>
+      <div class="projects-list">
 
-  <!-- Education -->
-  <section id="education">
-    <div class="container">
-      <p class="section-label">Education</p>
-      <div class="education-list">
-
-        <div class="edu-item">
-          <div class="edu-school">The University of British Columbia</div>
-          <div class="edu-degree">Exchange Student &middot; Computer Science / Commerce / Electrical Engineering</div>
-          <div class="edu-meta">2020</div>
-        </div>
-
-        <div class="edu-item">
-          <div class="edu-school">National University of Singapore</div>
-          <div class="edu-degree">BEng Computer Engineering &middot; 2nd Major in Innovation and Design</div>
-          <div class="edu-meta">2017 – 2021 &middot; Honours (Highest Distinction)</div>
+        <div class="project-item">
+          <img class="project-image" src="assets/qwas.png" alt="Screenshot of QWAS gameplay, showing a quadrotor drone in flight between a start and landing pad" loading="lazy" />
+          <div class="project-header">
+            <h3 class="project-name">QWAS</h3>
+            <div class="project-links">
+              <a href="https://chiaxr.github.io/QWAS/" target="_blank" rel="noopener noreferrer">Play</a>
+              <a href="https://github.com/chiaxr/QWAS" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div class="project-desc">A small 3D drone physics game inspired by QWOP — instead of controlling a runner's legs, you independently control a quadrotor's four propellers with Q/W/A/S, flying from a start pad to a landing pad and sticking a gentle landing.</div>
+          <div class="project-meta">C++ &middot; raylib &middot; WebAssembly</div>
         </div>
 
       </div>
