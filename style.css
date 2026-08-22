@@ -141,7 +141,14 @@ nav {
 .hero-title {
   font-size: 1rem;
   color: var(--muted);
-  margin-bottom: 2rem;
+  text-wrap: balance;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--muted);
+  text-wrap: balance;
+  margin: 0.2rem 0 2rem;
 }
 
 .hero-links {
